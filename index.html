@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scientific-calculator | test-SIMPLON T4S</title>
+
+    <!-- importation de la feuille de style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- importation du script -->
+    <script src="assets/js/fonction.js"></script>
+</head>
+<body>
+
+    <!-- ENTETE DE LA PAGE -->
+    <div class="header">
+        
+        <!-- <div class="logo">
+            <div class="logo-space">
+                <h1>
+                    <a href="">online-calculator</a>
+                </h1>
+            </div>
+    
+            <div class="search-space">
+    
+            </div>
+        </div> -->
+
+    </div>
+
+
+    <!-- CORPS DE LA PAGE -->
+    <main class="main">
+        <div class="pub">
+
+        </div>
+
+        <!-- section calculatrice -->
+        <div class="calculatrice">
+            <div class="font">
+                <form action="" name="forme">
+                    <input type="text" name="screen" id="screen" value="0" disabled>
+                    <hr>
+                    <table width="98%" cellspacing="10px" >
+                        <tr>
+                            <td>
+                                <button type="button" class="btn nan" onclick="">Deg</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="">(</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="">)</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('%')">%</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="">MC</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="">M+</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="">M-</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="">MR</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('1/x')">1/x</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('X²');">X²</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('X³');">X³</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="fct_puissance('yˣ');">yˣ</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="clear_screen();">C</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="set_operation('+/-')">+/-</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="set_operation('÷');">÷</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="set_operation('x');">x</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('X!');">X!</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('√');">√</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="fct_puissance('ˣ√y');">ˣ√y</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('log');">log</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="set_screen(7);">7</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="set_screen(8);">8</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="set_screen(9);">9</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="set_operation('-');">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('sin');">sin</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('cos');">cos</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('tan');">tan</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('ln');">ln</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="set_screen(4);">4</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="set_screen(5);">5</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="set_screen(6);">6</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="set_operation('+');">+</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('sinh');">sinh</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('cosh');">cosh</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('tanh');">tanh</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('eX');">eX</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="set_screen(1);">1</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="set_screen(2);">2</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="set_screen(3);">3</button>
+                            </td>
+                            <td rowspan="2">
+                                <button type="button" class="btn nan equal" onclick="equal();">=</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn nan" onclick="">1st</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('∏');">∏</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="fct_puissance('EE');">EE</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nan" onclick="math_fct('rnd');">rnd</button>
+                            </td>
+                            <td colspan="2">
+                                <button type="button" class="btn nbre zero" onclick="set_screen(0);">0</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn nbre" onclick="is_decimal();">.</button>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </form>
+            </div>
+            <a href="">www.online-calculator.com</a>
+        </div>
+        <!-- FIN calculatrice -->
+        <div class="social-links">
+
+        </div>
+
+        <!-- <div class="other-option">
+            <ul>
+                <li>
+                    <a href="#">Full Screen Calculator</a>
+                    <em> - The Online Calculator that can be used free and full screen</em>
+                </li>
+                <li>
+                    <a href="#">Scientific Calculator</a>
+                    <em> - A great Scientific Calculator. Clear and Free!</em>
+                </li>
+                <li>
+                    <a href="#">Simple Calculator</a>
+                    <em> - A nice Simple Free Online Calculator. Easy to use and read.</em>
+                </li>
+                <li>
+                    <a href="">Online Abacus</a>
+                    <em> - An Online Abacus! Teach numbers from 1 to 50 :-)</em>
+                </li>
+                <li>
+                    <a href="">Darts Calculator</a>
+                    <em> - Forget the maths, and play Darts!</em>
+                </li>
+                <li>
+                    <a href="">Maths Calculator</a>
+                    <em> - This Online Maths Calculator show the history of your sums. Very helpful!</em>
+                </li>
+                <li>
+                    <a href="">Stopwatch</a>
+                    <em> - Online Stopwatch, FULL SCREEN Stopwatch. Great for meetings, classrooms, conferences, schools, anywhere really... :-)</em>
+                </li>
+                <li>
+                    <a href="">BMI Calculator</a>
+                    <em> - Work out your BMI / Body Mass Index</em>
+                </li>
+                <li>
+                    <a href="">Patio Calculator</a>
+                    <em> - How many slabs for that patio?</em>
+                </li>
+                <li>
+                    <a href="">Ring Size Converter</a>
+                    <em> - What size ring do you need? Know the differences</em>
+                </li>
+                <li>
+                    <a href="">Google Calculator</a>
+                    <em> - Find out about the cool new calculator from Google.</em>
+                </li>
+                <li>
+                    <a href="">Distance Converter</a>
+                    <em> - Convert Distances! Miles, KM, and more!</em>
+                </li>
+                <li>
+                    <a href="">Length Converter</a>
+                    <em> - Convert Lengths! CM, Feet, and more!</em>
+                </li>
+                <li>
+                    <a href="">Percentage Calculator</a>
+                    <em> - Work out all the percentages you need!</em>
+                </li>
+                <li>
+                    <a href="">Temperature Converter</a>
+                    <em> - Too Hot/ Too Cold? / Just Right!</em>
+                </li>
+                <li>
+                    <a href="">Volume Converter</a>
+                    <em> - Find the Volume of a cube!</em>
+                </li>
+                <li>
+                    <a href="">Weight Converter</a>
+                    <em> - Convert between weights</em>
+                </li>
+                <li>
+                    <a href="">Random Name Picker</a>
+                    <em> - Random Name Picker Wheel and More Random Generators!</em>
+                </li>
+            </ul>
+        </div> -->
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer">
+        <ul>
+            <li>About Us</li>
+            <li>News / Blog</li>
+            <li>Contact us</li>
+            <li>Languades</li>
+            <li>Terms & FAQ</li>
+            <li>Privacy Policy</li>
+            <li>Stopwatch</li>
+        </ul>
+    </footer>
+</body>
+</html>
